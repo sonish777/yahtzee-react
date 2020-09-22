@@ -1,0 +1,46 @@
+.RuleRow {
+}
+
+.RuleRow .Row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid grey !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.2px;
+}
+
+.RuleRow .Row.Used {
+  background-image: linear-gradient(
+    120deg,
+    #f0c27b,
+    #ddd6f3 40%,
+    transparent 5%
+  );
+  cursor: not-allowed;
+  background-size: 223%;
+  animation: fillGradient 1s ease-out forwards;
+  /* font-weight: bold; */
+}
+
+@keyframes fillGradient {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.RuleRow .Row.Used .Row-Name {
+  text-decoration: line-through;
+}
+
+.RuleRow .Row.Used:hover {
+  color: black;
+  font-weight: normal;
+}
+
+.RuleRow .Row:hover {
+  font-weight: bold;
+}

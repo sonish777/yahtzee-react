@@ -1,0 +1,39 @@
+.Dice {
+  margin: 0 auto;
+}
+
+.Dice .Die {
+  font-size: 65px;
+  margin: 0 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: black;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Dice .Die.Locked {
+  color: rgb(102, 101, 101);
+  text-shadow: none;
+}
+
+.Dice .Die.Rolling {
+  color: rgb(75, 74, 74);
+  animation: rolling 2s infinite ease;
+  cursor: not-allowed;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Dice .Die:hover {
+  transform: translateY(-2px);
+}

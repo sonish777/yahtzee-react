@@ -1,0 +1,15 @@
+.ScoreTable .Table {
+  width: 100%;
+}
+
+.ScoreTable .Table-Heading {
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
