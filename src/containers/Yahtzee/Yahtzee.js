@@ -155,12 +155,17 @@ class Yahtzee extends Component {
             </Fragment>
           )}
         </div>
-
         <div className="Rules">
           <ScoreTable
             handleScore={this.handleScore}
             scores={this.state.scores}
           />
+        </div>
+        <div className="GithubLink">
+          For Project Github Link, Click{" "}
+          <a href="https://github.com/sonish777/yahtzee-react" target="_blank">
+            Here
+          </a>
         </div>
       </main>
     );
