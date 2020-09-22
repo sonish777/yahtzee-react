@@ -164,7 +164,7 @@ class Yahtzee extends Component {
         <div className="GithubLink">
           For Project Github Link, Click{" "}
           <a href="https://github.com/sonish777/yahtzee-react" target="_blank">
-            Here
+            Here !!
           </a>
         </div>
       </main>
